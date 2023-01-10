@@ -1,0 +1,19 @@
+ApiAddr = :00
+SqliteDsn = "file:ndi-router.db?_mutex=full"
+
+[inputs]
+; input_id = HOSTNAME (NDI Channel Name)
+cam1 = ENCODER (Cam1)
+cam2 = ENCODER (Cam2)
+cam3 = ENCODER (Cam3)
+pc1 = ENCODER (PC1)
+pc2 = ENCODER (PC2)
+livestream = NDIROUTER (Live Stream)
+
+[outputs]
+; output_id = NDI Channel Name
+main-front = Main Front Screen
+main-rear = Main Rear Screen
+kids = Kids Room TV
+kitchen = Kitchen TV
+livestream = Live Stream
