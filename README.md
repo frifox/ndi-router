@@ -41,13 +41,17 @@ curl http://localhost/updateOutput?output=livestream&input=cam1
 ```
 let socket = new WebSocket("ws://localhost");
 
-socket.send(JSON.stringify({
+let emit = {
+    Type: "UpdateOutput",
     Output: "main-screen",
     Input: "pc1",
-}));
+}
+socket.send(JSON.stringify(emit));
 
-socket.send(JSON.stringify({
+let emit = {
+    Type: "UpdateOutput",
     Output: "livestream",
     Input: "cam1",
-}));
+}
+socket.send(JSON.stringify(emit));
 ```
