@@ -1,5 +1,5 @@
-ApiAddr = :00
-SqliteDsn = "file:ndi-router.db?_mutex=full"
+ApiAddr = :80
+SqliteDsn = file:ndi-router.db?_mutex=full
 
 [inputs]
 ; input_id = HOSTNAME (NDI Channel Name)
